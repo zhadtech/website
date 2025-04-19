@@ -1,3 +1,16 @@
 site_name: Zhad Tech Library
 site_url: https://zhadtech.github.io/
 site_author: Zhad Tech
+site_description: >
+  A collection of documentation and guides for Zhad Tech projects.
+
+
+theme:
+  name: material
+
+# plugins:
+#   - search
+#   - sitemap
+#   - social-preview
+#   - social-preview
+
