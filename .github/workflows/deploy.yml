@@ -42,8 +42,10 @@ jobs:
 
       - name: Initialize and update docs submodule
         run: |
-          git submodule init
-          git submodule update --recursive
+          git submodule add -f git@github.com:zhadtech/docs.git docs
+          git submodule update --init --recursive
+          echo "Docs directory contents:"
+          ls -la docs
 
       - name: Setup Python
         uses: actions/setup-python@v4
