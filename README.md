@@ -68,3 +68,41 @@ theme:
 ## Usage
 
 After installation, you can create a new MkDocs project or serve an existing one. Refer to the [MkDocs documentation](https://www.mkdocs.org/) for more information.
+
+## Git Submodule Setup for Documentation
+
+This project uses a git submodule for managing documentation content. Here's how to set it up:
+
+```bash
+# Add the docs submodule
+git submodule add git@github.com:your-organization/docs.git docs
+
+# Initialize and update the submodule
+git submodule init
+git submodule update --recursive
+```
+
+### Setting up SSH Keys for Submodule Access
+
+To enable GitHub Actions to access the docs submodule:
+
+1. Generate a new SSH key pair:
+```bash
+ssh-keygen -t ed25519 -C "github-actions-deploy" -f github-actions-key
+```
+
+2. Add the private key to your main repo secrets:
+   - Go to your main repo on GitHub → Settings → Secrets and variables → Actions
+   - Create a new repository secret named `SSH_KEY`
+   - Copy the entire contents of `github-actions-key` (private key) and paste it as the value
+
+3. Add the public key to your docs repo:
+   - Go to your docs repo → Settings → Deploy keys
+   - Click "Add deploy key"
+   - Give it a title like "GitHub Actions Deploy Key"
+   - Paste the contents of `github-actions-key.pub` (public key)
+   - Check "Allow write access" if your workflow needs to push changes
+   - Click "Add key"
+
+This setup allows your GitHub Actions workflow to authenticate and access the submodule during deployment.
+
