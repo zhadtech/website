@@ -177,20 +177,27 @@
 [data-md-color-scheme="ghibli-dark"] .md-nav--primary .md-nav__title {
   color: #E07A5F !important; /* Warm terracotta */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  background: none !important; /* Remove any background */
+  border: none !important; /* Remove any borders */
+  padding: 0 !important; /* Remove any padding */
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
 }
 
 /* Target the nav title directly */
 [data-md-color-scheme="ghibli-dark"] .md-nav__title {
   color: #E07A5F !important; /* Warm terracotta */
+  background: none !important; /* Explicitly remove background */
+  border-left: none !important; /* Remove any left border */
+  box-shadow: none !important; /* Remove any shadow */
 }
 
-/* Add gradient to navigation titles to make them stand out */
-[data-md-color-scheme="ghibli-dark"] nav .md-nav__title {
-  background: linear-gradient(rgba(37, 38, 48, 0.97), rgba(42, 43, 52, 0.98));
-  padding: 0.5rem;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-  border-left: 3px solid #E07A5F;
+/* Clean navbar title styling - just the text */
+.md-nav__title {
+  background: none !important;
+  padding: 0.5rem 0 !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* Header styling for better visibility */
