@@ -4,24 +4,48 @@ site_author: Zhad Tech
 site_description: >
   A collection of documentation and guides for Zhad Tech projects.
 
+# Define docs directory
+docs_dir: docs
 
 theme:
   name: material
+  custom_dir: custom_theme
   palette:
-    # Palette toggle for light mode
-    - scheme: default
-      primary: amber
+    # Palette toggle for Ghibli light mode
+    - scheme: ghibli-light
       toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+        icon: material/weather-sunny
+        name: Switch to Ghibli night mode
     
-    # Palette toggle for dark mode
-    - scheme: slate
-      primary: amber
+    # Palette toggle for Ghibli dark mode
+    - scheme: ghibli-dark
       toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+        icon: material/weather-night
+        name: Switch to Ghibli day mode
 
+  # Additional customizations for Ghibli theme
+  font:
+    text: Nunito
+    code: Roboto Mono
+  
+  # Code block features
+  features:
+    - content.code.copy
+    - content.code.annotate
+
+# Enable syntax highlighting
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+# Add custom CSS from the custom theme directory with version for cache busting
+extra_css:
+  - css/extra.css
     
 # plugins:
 #   - search
