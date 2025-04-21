@@ -2,6 +2,13 @@
 
 This guide walks you through setting up a Python development environment with pyenv, virtualenv, and installing MkDocs with the Material theme.
 
+## Core Folder structure
+```bash
+/project-root
+|-- docs/      # content plugged in as git submodule
+|-- mkdocs.yml # mkdocs configuration
+```
+
 ## Python Setup
 
 Install pyenv to manage Python versions:
