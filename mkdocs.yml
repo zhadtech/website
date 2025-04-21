@@ -45,7 +45,7 @@ markdown_extensions:
 
 # Add custom CSS from the custom theme directory with version for cache busting
 extra_css:
-  - css/extra.css
+  - css/main.css
     
 # plugins:
 #   - search

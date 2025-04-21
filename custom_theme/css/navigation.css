@@ -1,0 +1,58 @@
+/* Navigation styling */
+
+/* Navigation styling - Enhance the dark mode sidebar */
+[data-md-color-scheme="ghibli-dark"] .md-nav__item .md-nav__link--active {
+  color: #E07A5F;  /* Terracotta for active links */
+  font-weight: bold;
+}
+
+[data-md-color-scheme="ghibli-dark"] .md-nav__item .md-nav__link:hover {
+  color: #F2CC8F;  /* Warm sand for hover links */
+}
+
+/* Style the site title "Zhad Tech Library" in the header and sidebar */
+[data-md-color-scheme="ghibli-dark"] .md-header__title,
+[data-md-color-scheme="ghibli-dark"] .md-header__topic,
+[data-md-color-scheme="ghibli-dark"] .md-nav__title {
+  color: #E07A5F !important; /* Warm terracotta */
+}
+
+/* Style all navigation links in the sidebar */
+[data-md-color-scheme="ghibli-dark"] .md-nav__link {
+  color: #F3EED9; /* Light cream for normal links */
+  transition: color 0.2s;
+}
+
+/* Style the site name in the sidebar specifically */
+[data-md-color-scheme="ghibli-dark"] .md-nav__title .md-nav__button.md-logo + .md-nav__title,
+[data-md-color-scheme="ghibli-dark"] .md-nav--primary .md-nav__title[for="__drawer"] {
+  color: #E07A5F !important; /* Warm terracotta */
+  font-weight: bold;
+}
+
+/* Specific selector for the site name in navigation */
+[data-md-color-scheme="ghibli-dark"] .md-nav--primary .md-nav__title {
+  color: #E07A5F !important; /* Warm terracotta */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  background: none !important; /* Remove any background */
+  border: none !important; /* Remove any borders */
+  padding: 0 !important; /* Remove any padding */
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Target the nav title directly */
+[data-md-color-scheme="ghibli-dark"] .md-nav__title {
+  color: #E07A5F !important; /* Warm terracotta */
+  background: none !important; /* Explicitly remove background */
+  border-left: none !important; /* Remove any left border */
+  box-shadow: none !important; /* Remove any shadow */
+}
+
+/* Clean navbar title styling - just the text */
+.md-nav__title {
+  background: none !important;
+  padding: 0.5rem 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+} 

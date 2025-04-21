@@ -1,0 +1,90 @@
+/* Content area styling */
+
+/* Enhance headings with Ghibli-inspired styling - but match sizes between modes */
+[data-md-color-scheme="ghibli-dark"] .md-typeset h1 {
+  color: #E07A5F;  /* Terracotta for h1 headings */
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 2rem !important; /* Match size with light mode */
+}
+
+/* Match the size of the first heading on index page in dark mode with light mode */
+[data-md-color-scheme="ghibli-dark"] .md-content__inner h1:first-child {
+  color: #E07A5F !important; /* Warm terracotta for the main page title */
+  font-size: 2rem !important; /* Match size with light mode */
+  margin-bottom: 1em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+[data-md-color-scheme="ghibli-dark"] .md-typeset h2 {
+  color: #E5A87C;  /* Lighter terracotta for h2 headings */
+  font-weight: 600;
+  border-bottom: 1px solid rgba(224, 122, 95, 0.3);
+  padding-bottom: 0.2em;
+}
+
+[data-md-color-scheme="ghibli-dark"] .md-typeset h3 {
+  color: #F2CC8F;  /* Warm sand for h3 */
+}
+
+/* Custom styling for blockquotes to have a Ghibli feel */
+[data-md-color-scheme="ghibli-dark"] .md-typeset blockquote {
+  border-left: 4px solid #E07A5F;  /* Terracotta border */
+  background-color: rgba(224, 122, 95, 0.1);
+}
+
+/* Ensure all article titles are terracotta colored in dark mode */
+[data-md-color-scheme="ghibli-dark"] article h1 {
+  color: #E07A5F !important; /* Warm terracotta */
+  font-size: 2rem !important; /* Make sure all h1s are consistent size */
+}
+
+/* Target specific structure if the above selectors don't work */
+[data-md-color-scheme="ghibli-dark"] .md-typeset .md-content__heading {
+  color: #E07A5F !important;
+  font-size: 2rem !important;
+}
+
+/* Another approach to target the main content area headings */
+[data-md-color-scheme="ghibli-dark"] main h1,
+[data-md-color-scheme="ghibli-dark"] main h2 {
+  color: #E07A5F !important;
+}
+
+[data-md-color-scheme="ghibli-dark"] main h1 {
+  font-size: 2rem !important;
+}
+
+/* Table styling to match the background in dark mode */
+[data-md-color-scheme="ghibli-dark"] .md-typeset table:not([class]) {
+  background-color: #171921;  /* Slightly darker than the main background to maintain some contrast */
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(224, 122, 95, 0.2);  /* Subtle terracotta border */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header styling */
+[data-md-color-scheme="ghibli-dark"] .md-typeset table:not([class]) th {
+  background-color: #1c1e29;  /* Slightly darker for headers */
+  color: #E07A5F;  /* Terracotta headers */
+  font-weight: 600;
+  padding: 0.9em 1.2em;
+  border-bottom: 2px solid rgba(224, 122, 95, 0.3);
+}
+
+/* Table cell styling */
+[data-md-color-scheme="ghibli-dark"] .md-typeset table:not([class]) td {
+  padding: 0.75em 1.2em;
+  border-top: 1px solid rgba(224, 122, 95, 0.1);  /* Very subtle row dividers */
+}
+
+/* Table alternate row styling for better readability */
+[data-md-color-scheme="ghibli-dark"] .md-typeset table:not([class]) tr:nth-child(odd) {
+  background-color: rgba(30, 34, 43, 0.3);  /* Subtle alternating rows */
+}
+
+/* Table hover effect */
+[data-md-color-scheme="ghibli-dark"] .md-typeset table:not([class]) tr:hover {
+  background-color: rgba(224, 122, 95, 0.05);  /* Subtle highlight on hover */
+} 

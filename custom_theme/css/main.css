@@ -1,0 +1,8 @@
+/* Main CSS file for Ghibli-inspired theme */
+
+/* Import all the separate CSS modules */
+@import 'global.css';
+@import 'header.css';
+@import 'navigation.css';
+@import 'content.css';
+@import 'code.css'; 

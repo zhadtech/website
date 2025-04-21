@@ -1,0 +1,20 @@
+/* Code block styling */
+
+/* Custom styling for code blocks in both themes */
+.md-typeset pre {
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 1em 0;
+}
+
+/* Light theme specific code block styling */
+[data-md-color-scheme="ghibli-light"] .md-typeset pre {
+  background-color: #F1EAD1 !important; /* Slightly darker than regular code bg */
+  border-left: 4px solid var(--md-primary-fg-color);
+}
+
+/* Dark theme specific code block styling */
+[data-md-color-scheme="ghibli-dark"] .md-typeset pre {
+  background-color: #282B44 !important; /* Slightly darker than regular code bg */
+  border-left: 4px solid var(--md-primary-fg-color);
+} 

@@ -2,13 +2,13 @@
 
 {% block styles %}
     {{ super() }}
-    <link rel="stylesheet" href="{{ 'css/extra.css' | url }}?v={{ range(1000, 9999) | random }}" />
+    <link rel="stylesheet" href="{{ 'css/main.css' | url }}?v={{ range(1000, 9999) | random }}" />
     <script>
         // Force reload CSS when the page loads
         document.addEventListener('DOMContentLoaded', function() {
             const links = document.querySelectorAll('link[rel="stylesheet"]');
             links.forEach(function(link) {
-                if (link.href.includes('extra.css')) {
+                if (link.href.includes('main.css')) {
                     const url = new URL(link.href);
                     url.searchParams.set('v', Date.now());
                     link.href = url.toString();
