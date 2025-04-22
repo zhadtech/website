@@ -30,14 +30,14 @@
   font-weight: bold;
 }
 
-/* Specific selector for the site name in navigation */
+/* Specific styling for the left site map navigation */
 [data-md-color-scheme="ghibli-dark"] .md-nav--primary .md-nav__title {
   color: #E07A5F !important; /* Warm terracotta */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   background: none !important; /* Remove any background */
   border: none !important; /* Remove any borders */
   padding: 0 !important; /* Remove any padding */
-  margin-top: 1rem !important;
+  margin-top: 0.5rem !important;
   margin-bottom: 1rem !important;
 }
 
