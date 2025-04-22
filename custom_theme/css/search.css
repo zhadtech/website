@@ -1,0 +1,97 @@
+/* Custom search styling for both light and dark modes */
+
+/* ==================== LIGHT MODE STYLES ==================== */
+/* Default styles apply to light mode (ghibli-light) */
+
+/* Make search result titles consistent in light mode */
+[data-md-color-scheme="ghibli-light"] .md-search-result__title {
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  color: inherit;
+}
+
+[data-md-color-scheme="ghibli-light"] .md-search-result__article--document {
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  padding: 0.8rem !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  background-color: rgba(0, 0, 0, 0.02) !important;
+}
+
+/* Improve contrast in light mode search results */
+[data-md-color-scheme="ghibli-light"] .md-search-result__article {
+  border-radius: 4px !important;
+  margin: 0.2rem 0 !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Adjust search result panel size (applies to both themes) */
+.md-search__output {
+  max-height: 75vh !important;
+}
+
+/* ==================== DARK MODE STYLES ==================== */
+/* Dark mode specific styles */
+
+[data-md-color-scheme="ghibli-dark"] .md-search-result__title {
+  color: #F2CC8F;
+  font-size: 0.9rem;
+}
+
+[data-md-color-scheme="ghibli-dark"] .md-search-result__article--document {
+  background-color: #cbcfe4 !important;
+  padding: 0.8rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: #F2CC8F;
+  font-size: 0.9rem;
+}
+
+[data-md-color-scheme="ghibli-dark"] .md-search-result__teaser {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Improve contrast in dark mode search results */
+[data-md-color-scheme="ghibli-dark"] .md-search-result__article {
+  background-color: #1e1f27 !important;
+  border-radius: 4px !important;
+  margin: 0.2rem 0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #d0cccc !important;
+}
+
+[data-md-color-scheme="ghibli-dark"] .md-search__icon {
+  color: #d0cccc !important;
+}
+
+[data-md-color-scheme="ghibli-dark"] .md-search__input {
+  background-color: #1e1f27 !important;
+  color: #ffffff;
+}
+
+[data-md-color-scheme="ghibli-dark"] .md-search-result__meta {
+  background-color: #2b2d35 !important;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+[data-md-color-scheme="ghibli-dark"] .md-search-result__icon {
+  color: #d0cccc !important;
+}
+
+[data-md-color-scheme="ghibli-dark"] .md-search-result__more summary {
+  color: #F2CC8F !important;
+}
+
+/* Force styling on search dialog in dark mode */
+[data-md-color-scheme="ghibli-dark"] .md-search__inner {
+  background-color: #1a1c25 !important;
+}
+
+[data-md-color-scheme="ghibli-dark"] .md-search__output {
+  background-color: #545e76 !important;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.4) !important;
+} 
+
+[data-md-color-scheme="ghibli-dark"] .md-search__form {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+

@@ -32,7 +32,8 @@ theme:
   features:
     - content.code.copy
     - content.code.annotate
-
+    - search.suggest
+    - search.highlight
 # Enable syntax highlighting
 markdown_extensions:
   - pymdownx.highlight:
@@ -46,9 +47,10 @@ markdown_extensions:
 # Add custom CSS from the custom theme directory with version for cache busting
 extra_css:
   - css/main.css
+  - css/search.css
     
-# plugins:
-#   - search
+plugins:
+  - search
 #   - sitemap
 #   - social-preview
 #   - social-preview

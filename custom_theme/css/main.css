@@ -5,4 +5,5 @@
 @import 'header.css';
 @import 'navigation.css';
 @import 'content.css';
-@import 'code.css'; 
+@import 'code.css';
+@import 'search.css'; /* Added search CSS with highest priority */ 
