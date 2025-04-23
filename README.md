@@ -1,115 +1,117 @@
-# Python Environment Setup for MkDocs
+# Ghibli-Themed MkDocs Library
 
-This guide walks you through setting up a Python development environment with pyenv, virtualenv, and installing MkDocs with the Material theme.
+A beautiful, customizable MkDocs theme with Ghibli-inspired light and dark modes. This repository provides a ready-to-use documentation theme (materials) that anyone can adopt for their own projects.
 
-## Core Folder structure
-```bash
-/project-root
-|-- docs/      # content plugged in as git submodule
-|-- mkdocs.yml # mkdocs configuration
+![GitHub license](https://img.shields.io/github/license/zhadtech/library)
+
+## ✨ Features
+
+- 🎨 Custom Ghibli-inspired light and dark mode themes
+- 🌓 Light/dark mode toggle with animated icons
+- 🔍 Enhanced search bar with better visibility and UX
+- 📱 Responsive design for all device sizes
+- 🧩 Modular CSS architecture with isolated components
+- 📝 Code highlighting and annotation support
+- 🔄 Easy integration with your own content via git submodules
+
+## 🖼️ Project Structure
+
+```
+/library
+│
+├── custom_theme/           # Custom theme overrides
+│   ├── main.html           # Main template overrides
+│   └── css/                # Custom CSS components
+│       ├── main.css        # Entry point for CSS
+│       ├── global.css      # Global theme styles
+│       ├── search.css      # Enhanced search component
+│       ├── header.css      # Header component styles
+│       ├── navigation.css  # Navigation component styles
+│       ├── content.css     # Main content styling
+│       └── code.css        # Code block styling
+│
+├── mkdocs.yml              # MkDocs configuration
+├── requirements.txt        # Python dependencies
+└── docs/                   # Documentation content (can be replaced with your own)
 ```
 
-## Python Setup
+## 🚀 Quick Start
 
-Install pyenv to manage Python versions:
+### Prerequisites
+- Python 3.8+
+- pip
 
-```bash
-# Install pyenv using Homebrew on macOS
-brew update
-brew install pyenv
+### Installation
 
-# Add pyenv to your shell configuration
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
-echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(pyenv init -)"' >> ~/.zshrc
-source ~/.zshrc
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/zhadtech/library.git my-docs
+   cd my-docs
+   ```
 
-# List available Python versions
-pyenv install --list
+2. Set up a Python virtual environment:
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   ```
 
-# Install desired Python version
-pyenv install <python_version>
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-# Set python version globally or locally
-pyenv global <python_version>  # globally
-# OR
-pyenv local <python_version>   # locally in current directory
-```
+4. Replace the docs folder with your own content:
+   ```bash
+   # Remove the existing docs folder
+   rm -rf docs
+   
+   # Option 1: Add your docs as a git submodule
+   git submodule add https://github.com/your-username/your-docs.git docs
+   
+   # Option 2: Create your own docs folder
+   mkdir docs
+   # Add your markdown files to the docs folder
+   ```
 
-## Virtual Environment Setup
+5. Start the development server:
+   ```bash
+   mkdocs serve
+   ```
 
-Create and activate a virtual environment for your project:
+6. Access your documentation at `http://127.0.0.1:8000/`
 
-```bash
-# Install virtualenv globally
-pip install virtualenv
+## 🔧 Configuration
 
-# Navigate to your project root folder
-cd /path/to/project
+The theme is configured in the `mkdocs.yml` file:
 
-# Create a virtual environment
-virtualenv .venv
+- Two color schemes: `ghibli-light` and `ghibli-dark`
+- Font customization: Nunito for text, Roboto Mono for code
+- Enhanced code block features
 
-# Activate the virtual environment
-source .venv/bin/activate
-```
+You can customize the theme further by modifying the CSS files in the `custom_theme/css` directory.
 
-## MkDocs Installation
+## 📝 Project Roadmap
 
-Install MkDocs and the Material theme:
+- [x] Custom Ghibli-inspired theme
+- [x] Light and dark mode toggle
+- [x] Enhanced search functionality
+- [x] Modular CSS architecture  
+- [ ] Fix logo and menu button behavior in header section
+- [ ] Improve Responsive design
+- [ ] Add blog integration
+- [ ] News letter integration
+- [ ] Add mind map plugin
+- [ ] Social integration with preview cards
+- [ ] SEO optimization with sitemaps
+- [ ] Automated documentation testing
+- [ ] PDF export functionality
+- [ ] Internationalization support
 
-```bash
-# Install MkDocs
-pip install mkdocs
 
-# Install Material theme for MkDocs
-pip install mkdocs-material
-```
+## 🤝 Contributing
 
-Add the following lines to mkdocs.yml:
-```yaml
-theme:
-  name: material
-```
+Contributions are welcome! Feel free to submit a pull request or open an issue if you have any suggestions or find any bugs.
 
-## Usage
+## 📄 License
 
-After installation, you can create a new MkDocs project or serve an existing one. Refer to the [MkDocs documentation](https://www.mkdocs.org/) for more information.
-
-## Git Submodule Setup for Documentation
-
-This project uses a git submodule for managing documentation content. Here's how to set it up:
-
-```bash
-# Add the docs submodule
-git submodule add git@github.com:your-organization/docs.git docs
-
-# Initialize and update the submodule
-git submodule init
-git submodule update --recursive
-```
-
-### Setting up SSH Keys for Submodule Access
-
-To enable GitHub Actions to access the docs submodule:
-
-1. Generate a new SSH key pair:
-```bash
-ssh-keygen -t ed25519 -C "github-actions-deploy" -f github-actions-key
-```
-
-2. Add the private key to your main repo secrets:
-   - Go to your main repo on GitHub → Settings → Secrets and variables → Actions
-   - Create a new repository secret named `SSH_KEY`
-   - Copy the entire contents of `github-actions-key` (private key) and paste it as the value
-
-3. Add the public key to your docs repo:
-   - Go to your docs repo → Settings → Deploy keys
-   - Click "Add deploy key"
-   - Give it a title like "GitHub Actions Deploy Key"
-   - Paste the contents of `github-actions-key.pub` (public key)
-   - Check "Allow write access" if your workflow needs to push changes
-   - Click "Add key"
-
-This setup allows your GitHub Actions workflow to authenticate and access the submodule during deployment.
-
+This project is licensed under the Creative Commons Attribution 4.0 International License (CC-BY-4.0) - see the [LICENSE](LICENSE) file for details.
