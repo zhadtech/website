@@ -10,6 +10,8 @@ docs_dir: docs
 theme:
   name: material
   custom_dir: custom_theme
+  logo: assets/zhadtech-logo.png
+  favicon: assets/favicon.png
   palette:
     # Palette toggle for Ghibli light mode
     - scheme: ghibli-light
