@@ -2,3 +2,4 @@ drafts/
 *.bak
 .cursor*
 temp/
+.DS_Store
