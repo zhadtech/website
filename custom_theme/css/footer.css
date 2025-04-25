@@ -1,0 +1,10 @@
+/* Footer removal */
+.md-footer {
+  display: none !important;
+}
+
+/* Hide any other footer-related elements */
+.md-footer-meta, 
+.md-footer-nav {
+  display: none !important;
+} 

@@ -2,8 +2,8 @@
 
 /* Import all the separate CSS modules */
 @import 'global.css';
-@import 'header.css';
 @import 'navigation.css';
 @import 'content.css';
 @import 'code.css';
-@import 'search.css'; /* Added search CSS with highest priority */ 
+@import 'search.css';
+@import 'footer.css'; 
