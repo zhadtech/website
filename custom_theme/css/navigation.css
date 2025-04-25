@@ -10,9 +10,13 @@
   color: #F2CC8F;  /* Warm sand for hover links */
 }
 
+[data-md-color-scheme="ghibli-dark"] .md-header__topic{
+  color: #f5f0ef;
+}
+
+
 /* Style the site title "Zhad Tech Library" in the header and sidebar */
 [data-md-color-scheme="ghibli-dark"] .md-header__title,
-[data-md-color-scheme="ghibli-dark"] .md-header__topic,
 [data-md-color-scheme="ghibli-dark"] .md-nav__title {
   color: #E07A5F !important; /* Warm terracotta */
 }
