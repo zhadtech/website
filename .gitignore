@@ -3,3 +3,4 @@ drafts/
 .cursor*
 temp/
 .DS_Store
+.venv/

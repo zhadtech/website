@@ -10,7 +10,7 @@ docs_dir: docs
 theme:
   name: material
   custom_dir: custom_theme
-  logo: assets/zhadtech-logo.png
+  # logo: assets/zhadtech-logo.png
   favicon: assets/favicon.png
   palette:
     # Palette toggle for Ghibli light mode
@@ -49,7 +49,6 @@ markdown_extensions:
 # Add custom CSS from the custom theme directory with version for cache busting
 extra_css:
   - css/main.css
-  - css/search.css
     
 plugins:
   - search
