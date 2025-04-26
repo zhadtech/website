@@ -96,15 +96,16 @@ You can customize the theme further by modifying the CSS files in the `custom_th
 - [x] Light and dark mode toggle
 - [x] Enhanced search functionality
 - [x] Modular CSS architecture  
-- [ ] Fix logo and menu button behavior in header section
+- [x] Fix logo and menu button behavior in header section
+- [x] Include admonition
+- [ ] Add mind map plugin
 - [ ] Improve Responsive design
 - [ ] Add blog integration
 - [ ] News letter integration
-- [ ] Add mind map plugin
 - [ ] Social integration with preview cards
 - [ ] SEO optimization with sitemaps
-- [ ] Automated documentation testing
 - [ ] PDF export functionality
+- [ ] Automated documentation testing
 - [ ] Internationalization support
 
 
