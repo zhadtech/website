@@ -4,7 +4,6 @@
 ![Build Status](https://img.shields.io/github/workflow/status/zhadtech/website/CI)
 ![Version](https://img.shields.io/github/v/release/zhadtech/website)
 ![Open Issues](https://img.shields.io/github/issues/zhadtech/website)
-![Dependencies Status](https://img.shields.io/david/zhadtech/website)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
 ![FOSSA Status](https://img.shields.io/badge/FOSSA-compliant-brightgreen)
 ![GitHub license](https://img.shields.io/github/license/zhadtech/website)
