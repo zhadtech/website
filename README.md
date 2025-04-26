@@ -2,7 +2,8 @@
 
 A beautiful, customizable MkDocs theme with Ghibli-inspired light and dark modes. This repository provides a ready-to-use documentation theme (materials) that anyone can adopt for their own projects.
 
-![GitHub license](https://img.shields.io/github/license/zhadtech/library)
+![GitHub license](https://img.shields.io/github/license/zhadtech/website)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## ✨ Features
 
@@ -113,6 +114,7 @@ You can customize the theme further by modifying the CSS files in the `custom_th
 
 Contributions are welcome! Feel free to submit a pull request or open an issue if you have any suggestions or find any bugs.
 
-## 📄 License
+## License
 
-This project is licensed under the Creative Commons Attribution 4.0 International License (CC-BY-4.0) - see the [LICENSE](LICENSE) file for details.
+The theme and configuration files in this repository are licensed under the MIT License.
+Private content stored in submodules is not covered by this license and remains proprietary to Zhad.
