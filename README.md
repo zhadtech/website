@@ -1,8 +1,16 @@
 # Ghibli-Themed MkDocs Library
 
+![GitHub last commit](https://img.shields.io/github/last-commit/zhadtech/website)
+![Build Status](https://img.shields.io/github/workflow/status/zhadtech/website/CI)
+![Version](https://img.shields.io/github/v/release/zhadtech/website)
+![Open Issues](https://img.shields.io/github/issues/zhadtech/website)
+![Dependencies Status](https://img.shields.io/david/zhadtech/website)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
+![FOSSA Status](https://img.shields.io/badge/FOSSA-compliant-brightgreen)
+![GitHub license](https://img.shields.io/github/license/zhadtech/website)
+
 A beautiful, customizable MkDocs theme with Ghibli-inspired light and dark modes. This repository provides a ready-to-use documentation theme (materials) that anyone can adopt for their own projects.
 
-![GitHub license](https://img.shields.io/github/license/zhadtech/website)
 
 ## ✨ Features
 
