@@ -1,0 +1,87 @@
+/* Base admonition styles */
+.admonition {
+    background-color: transparent !important;
+    border: 1px solid #ddd;
+}
+
+.admonition .admonition-title {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    color: #333 !important;
+}
+
+/* Specific adjustment for summary/abstract admonitions */
+.admonition.abstract, .admonition.summary {
+    background-color: transparent !important;
+}
+
+.admonition.abstract .admonition-title, .admonition.summary .admonition-title {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Specific styles for quote admonitions */
+.admonition.quote {
+    background-color: rgba(0, 0, 0, 0.02) !important;
+    border-left: 3px solid #666 !important;
+}
+
+.admonition.quote .admonition-title {
+    color: #333 !important;
+}
+
+.admonition.quote p {
+    color: #333 !important;
+    font-style: italic;
+}
+
+/* Light theme styles (ghibli-light) */
+[data-md-color-scheme="ghibli-light"] .admonition {
+    background-color: transparent !important;
+    border: 1px solid #ddd;
+}
+
+[data-md-color-scheme="ghibli-light"] .admonition .admonition-title {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    color: #333 !important;
+}
+
+[data-md-color-scheme="ghibli-light"] .admonition.quote {
+    background-color: rgba(0, 0, 0, 0.02) !important;
+    border-left: 3px solid #666 !important;
+}
+
+[data-md-color-scheme="ghibli-light"] .admonition.quote p {
+    color: #333 !important;
+}
+
+
+/* Dark theme styles (ghibli-dark) */
+[data-md-color-scheme="ghibli-dark"] .admonition {
+    background-color: transparent !important;
+    border: 1px solid #444;
+}
+
+[data-md-color-scheme="ghibli-dark"] .admonition .admonition-title {
+    background-color: rgba(255, 255, 255, 0.07) !important;
+    color: #eee !important;
+}
+
+[data-md-color-scheme="ghibli-dark"] .admonition p, [data-md-color-scheme="ghibli-dark"] .admonition li {
+    color: #ddd !important;
+}
+
+[data-md-color-scheme="ghibli-dark"] .admonition.abstract, [data-md-color-scheme="ghibli-dark"] .admonition.summary {
+    background-color: transparent !important;
+}
+
+[data-md-color-scheme="ghibli-dark"] .admonition.abstract .admonition-title, [data-md-color-scheme="ghibli-dark"] .admonition.summary .admonition-title {
+    background-color: rgba(255, 255, 255, 0.07) !important;
+}
+
+[data-md-color-scheme="ghibli-dark"] .admonition.quote {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    border-left: 3px solid #aaa !important;
+}
+
+[data-md-color-scheme="ghibli-dark"] .admonition.quote p {
+    color: #ddd !important;
+}
