@@ -43,7 +43,11 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - admonition
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
@@ -54,6 +58,11 @@ extra_css:
     
 plugins:
   - search
+  - mermaid2:
+      version: 10.6.1
+      arguments:
+        securityLevel: 'loose'
+        theme: 'default'
 #   - sitemap
 #   - social-preview
 #   - social-preview

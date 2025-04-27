@@ -104,7 +104,8 @@ You can customize the theme further by modifying the CSS files in the `custom_th
 - [x] Modular CSS architecture  
 - [x] Fix logo and menu button behavior in header section
 - [x] Include admonition
-- [ ] Add mind map plugin
+- [x] Add diagram plugin
+- [ ] Add idea interactive graph
 - [ ] Improve Responsive design
 - [ ] Add blog integration
 - [ ] News letter integration

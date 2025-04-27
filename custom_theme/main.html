@@ -16,4 +16,9 @@
             });
         });
     </script>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script src="{{ 'js/mermaid.js' | url }}?v={{ range(1000, 9999) | random }}"></script>
 {% endblock %} 
