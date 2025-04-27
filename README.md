@@ -1,7 +1,6 @@
 # Ghibli-Themed MkDocs Library
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/zhadtech/website)
-![Build Status](https://img.shields.io/github/workflow/status/zhadtech/website/CI)
 ![Version](https://img.shields.io/github/v/release/zhadtech/website)
 ![Open Issues](https://img.shields.io/github/issues/zhadtech/website)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
@@ -122,5 +121,5 @@ Contributions are welcome! Feel free to submit a pull request or open an issue i
 
 ## License
 
-The theme and configuration files in this repository are licensed under the MIT License.
+The theme and configuration files in this repository are licensed under the MIT License.  
 Private content stored in submodules is not covered by this license and remains proprietary to Zhad.
