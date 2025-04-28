@@ -1,8 +1,8 @@
-site_name: Zhad Tech Library
-site_url: https://zhadtech.github.io/
-site_author: Zhad Tech
+site_name: template library
+site_url: https://zhadtech.github.io/template-library/
+site_author: Zhad
 site_description: >
-  A collection of documentation and guides for Zhad Tech projects.
+  An mkdocs library template made by Zhad Tech.
 
 # Define docs directory
 docs_dir: docs
@@ -10,8 +10,6 @@ docs_dir: docs
 theme:
   name: material
   custom_dir: custom_theme
-  # logo: assets/zhadtech-logo.png
-  favicon: assets/favicon.png
   palette:
     # Palette toggle for Ghibli light mode
     - scheme: ghibli-light
@@ -36,6 +34,7 @@ theme:
     - content.code.annotate
     - search.suggest
     - search.highlight
+
 # Enable syntax highlighting
 markdown_extensions:
   - pymdownx.highlight:
@@ -61,9 +60,5 @@ plugins:
   - mermaid2:
       version: 10.6.1
       arguments:
-        securityLevel: 'loose'
+        securityLevel: 'tight'
         theme: 'default'
-#   - sitemap
-#   - social-preview
-#   - social-preview
-

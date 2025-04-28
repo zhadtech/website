@@ -96,6 +96,49 @@ The theme is configured in the `mkdocs.yml` file:
 
 You can customize the theme further by modifying the CSS files in the `custom_theme/css` directory.
 
+
+## 🚀 Deployment with GitHub Actions
+
+This repository includes a GitHub Actions workflow for automatic deployment to GitHub Pages:
+
+1. 🔑 **Repository Settings**:
+   - Go to your repository's Settings → Pages
+   - Set the source to "GitHub Actions"
+   - Enable "Enforce HTTPS"
+
+2. 📝 **Workflow Configuration**:
+   - The workflow file is at `.github/workflows/deploy.yml`
+   - For private repositories, follow our [SSH Keys Setup Guide](docs/How%20To/Set%20up%20SSH%20keys%20for%20accessing%20submodule.md)
+   - Customize the workflow file according to your needs:
+     - Branch name (if not using 'main')
+     - Python version
+     - Repository URLs
+     - Submodule configuration (if using)
+   - Enable/disable plugins and features as needed
+
+3. 🚀 **Deployment**:
+   - Every push to main triggers automatic deployment
+   - Manual deployment available in Actions tab
+   - Site will be at `https://YOUR_USERNAME.github.io/REPO_NAME`
+   - Other deployment options:
+      - ☁️ Netlify
+      - 🖥️ Your own server
+      - 🏠 Local network
+
+!!! warning "Security Notes"
+    - Keep SSH keys and secrets secure
+    - Never commit sensitive information
+    - Monitor deployment logs
+    - Rotate keys periodically
+    - Remove unused deploy keys
+
+4. 🔧 **Other configuration**:
+   - 🎨 **Custom Styling**: Modify `custom_theme/css/` for personalized looks
+   - 🔌 **Plugins**: Add extra functionality through MkDocs plugins
+   - 🔄 **Git Submodules**: Manage multiple documentation repositories
+   - 🔍 **Search Customization**: Configure search behavior
+   - 📊 **Analytics**: Add tracking if needed
+
 ## 📝 Project Roadmap
 
 - [x] Custom Ghibli-inspired theme
@@ -103,10 +146,11 @@ You can customize the theme further by modifying the CSS files in the `custom_th
 - [x] Enhanced search functionality
 - [x] Modular CSS architecture  
 - [x] Fix logo and menu button behavior in header section
-- [x] Include admonition
+- [x] Include admonition plugin
 - [x] Add diagram plugin
-- [ ] Add idea interactive graph
+- [x] Include basic syntax in doc and update git workflow
 - [ ] Improve Responsive design
+- [ ] Add idea interactive graph
 - [ ] Add blog integration
 - [ ] News letter integration
 - [ ] Social integration with preview cards
