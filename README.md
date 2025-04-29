@@ -149,7 +149,9 @@ This repository includes a GitHub Actions workflow for automatic deployment to G
 - [x] Include admonition plugin
 - [x] Add diagram plugin
 - [x] Include basic syntax in doc and update git workflow
-- [ ] Improve Responsive design
+- [x] Improve Responsive design
+
+## Other Roadmap Consideration
 - [ ] Add idea interactive graph
 - [ ] Add blog integration
 - [ ] News letter integration
@@ -168,3 +170,7 @@ Contributions are welcome! Feel free to submit a pull request or open an issue i
 
 The theme and configuration files in this repository are licensed under the MIT License.  
 Private content stored in submodules is not covered by this license and remains proprietary to Zhad.
+
+## Note from Author
+
+Originally, this was supposed to be my study notes. However, it finally dawned on me that drawing mindmaps in an MD file has a lot of friction. And as you know, friction generates heat. Well, with all that, this is still a great tool to use. It's great for organizing your thoughts, ideas, and projects. You own everything. There are ways to capture interaction, but that's a story for another day. Everything here is packaged and comes with a manual, void of distractions. Feel free to drop me a message in the discussion. I'd be happy to engage.
